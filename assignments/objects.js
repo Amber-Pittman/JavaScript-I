@@ -51,14 +51,16 @@ const interns = [
 console.log((interns[0].firstName));
 
 // Kennan's ID
-console.log((interns[0,1].id));
+console.log((interns[1].id));
 
 // Keven's email
 console.log((interns[2].email));
 
 // Gannie's name
+console.log((interns[3].firstName));
 
 // Antonietta's Gender
+console.log((interns[4].gender));
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
