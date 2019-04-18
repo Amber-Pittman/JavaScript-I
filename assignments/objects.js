@@ -19,57 +19,66 @@ const example = {
 
 // Write your intern objects here:
 
-const interns = [
-  {"id": 1,
+const mitzi = {"id": 1,
   "email": "mmelloy0@PushSubscription.edu",
   "firstName": "Mitzi",
-  "gender": "F"},
-  {"id": 2,
-    "email": "kdiben1@tinypic.com",
-    "firstName": "Kennan",
-    "gender": "M"},
-  {"id": 3,
-    "email": "kmummery2@wikimedia.org",
-    "firstName": "Keven",
-    "gender": "M"},
-  {"id": 4,
+  "gender": "F"
+}
+
+const kennan = {"id": 2,
+  "email": "kdiben1@tinypic.com",
+  "firstName": "Kennan",
+  "gender": "M"
+}
+
+const keven = {"id": 3,
+  "email": "kmummery2@wikimedia.org",
+  "firstName": "Keven",
+  "gender": "M"
+}
+
+const gannie = {"id": 4,
     "email": "gmartinson3@illinois.edu",
     "firstName": "Gannie",
-    "gender": "M"},
-  {"id": 5,
+    "gender": "M"
+  }
+
+const antonietta = {"id": 5,
   "email": "adaine5@samsung.com",
   "firstName": "Antonietta",
-  "gender": "F"}
-  
-]
+  "gender": "F"
+}
 
 
 // ==== Challenge 2: Reading Object Data ==== 
 // Once your objects are created, log out the following requests from HR into the console:
 
 // Mitzi's name
-console.log((interns[0].firstName));
+console.log((mitzi.firstName));
 
 // Kennan's ID
-console.log((interns[1].id));
+console.log((kennan.id));
 
 // Keven's email
-console.log((interns[2].email));
+console.log((keven.email));
 
 // Gannie's name
-console.log((interns[3].firstName));
+console.log((gannie.firstName));
 
 // Antonietta's Gender
-console.log((interns[4].gender));
+console.log((antonietta.gender));
 
 
 // ==== Challenge 3: Object Methods ==== 
 // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
-console.log(kennan.speak("Hello, my name is Kennan!"));
+kennan.speak = function() {
+  return "Hello, my name is Kennan!";
+}
+console.log(kennan.speak());
 
 // Antonietta loves math, give her the ability to multiply two numbers together and return the product. Use the console.log provided as a hint.
-function multiplyNums(a, b) {
-  let antonietta = a * b;
+antonietta.multiplyNums = function(a, b) {
+  return a * b;
 }
 console.log(antonietta.multiplyNums(3,4));
 
