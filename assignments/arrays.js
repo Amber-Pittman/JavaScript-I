@@ -64,12 +64,8 @@ let inventory = [
 
 // ==== Challenge 1 ====
 // The dealer can't recall the information for a car with an id of 33 on his lot. Help the dealer find out which car has an id of 33 by logging the car's year, make, and model in the console log provided to you below:
-const car33 = function(inventory, id) {
-    let lookup = inventory.find => this.id === 33; {
-        return car33;
-    }
-console.log(`Car ${lookup.id} is a ${lookup.car_year} ${lookup.car_make} ${lookup.car_model}`);
-}
+
+console.log(`Car 33 is a ${inventory[32].car_year} ${inventory[32].car_make} ${inventory[32].car_model}`);
 
 
 // ==== Challenge 2 ====
