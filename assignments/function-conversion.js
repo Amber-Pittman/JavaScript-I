@@ -5,21 +5,47 @@
 // };
 // myFunction();
 
+let myFunction = () => {
+    console.log("Function was invoked!");
+};
+myFunction();
+
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
+
+let anotherFunction = (param) => {
+    console.log(param);
+    return param;
+};
+anotherFunction("Example");
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
 
+let add = (param1, param2) => {
+    console.log(param1 + param2);
+    return(param1 + param2);
+};
+add(1,2);
+
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
 
+let subtract = (param1, param2) => {
+    console.log(param1 - param2);
+    return(param1 - param2);
+};
+subtract(1,2);
+
+
+// I kept the returns as per original formula, but I used console.log to display it for my use.
+// Hope that is okay.
 
 // Stretch
 
